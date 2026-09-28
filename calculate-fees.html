@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees - Adventure Escape SA</title>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Adventure Escape SA Logo">
+        <span>Adventure Escape SA</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="calculate-fees.html">Calculate Fees</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html">Book Now</a>
+    </header>
+
+    <main>
+        <section>
+            <h1>My Quote &amp; Fee Calculator</h1>
+            <p>Customize your package selection and calculate estimated costs based on participant group size.</p>
+
+            <!-- Activity Selection Form -->
+            <form action="contact.html" method="get">
+                <fieldset>
+                    <legend>Select Activities</legend>
+
+                    <article>
+                        <h3>Table Mountain Hike</h3>
+                        <p>2 Adults, 1 Child &bull; Oct 15</p>
+                        <p>Price: ZAR 1,200</p>
+                        <label>
+                            Quantity:
+                            <input type="number" name="qty_hike" value="1" min="0">
+                        </label>
+                        <button type="button">Remove</button>
+                    </article>
+
+                    <article>
+                        <h3>Coastal Kayaking</h3>
+                        <p>2 Adults &bull; Oct 16</p>
+                        <p>Price: ZAR 850</p>
+                        <label>
+                            Quantity:
+                            <input type="number" name="qty_kayak" value="1" min="0">
+                        </label>
+                        <button type="button">Remove</button>
+                    </article>
+
+                    <button type="button">+ Add Another Activity</button>
+                </fieldset>
+
+                <!-- Group & Pricing Summary -->
+                <fieldset>
+                    <legend>Group Size Details</legend>
+                    <label for="group_type">Group Type:</label>
+                    <select id="group_type" name="group_type">
+                        <option value="family">Family / Group</option>
+                        <option value="solo">Solo Traveler</option>
+                        <option value="corporate">Corporate Team</option>
+                    </select>
+                </fieldset>
+
+                <!-- Price Breakdown Panel -->
+                <section>
+                    <h2>Quote Summary</h2>
+                    <p><strong>10% Multi-Activity Discount Applied!</strong> (You've unlocked savings by booking 2+ activities).</p>
+                    <table>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td>ZAR 2,050</td>
+                        </tr>
+                        <tr>
+                            <td>Discount (10%):</td>
+                            <td>- ZAR 205</td>
+                        </tr>
+                        <tr>
+                            <td>Taxes &amp; Fees:</td>
+                            <td>ZAR 150</td>
+                        </tr>
+                        <tr>
+                            <th>Total Due (Includes VAT):</th>
+                            <th>ZAR 1,995</th>
+                        </tr>
+                    </table>
+                    
+                    <button type="submit">Proceed to Booking Request</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Adventure Escape SA</h2>
+            <p>Crafting unforgettable guided outdoor experiences in the majestic Western Cape.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>2024 Adventure Escape SA. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
